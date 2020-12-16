@@ -7,9 +7,14 @@ use App\Http\Controllers\Controller;
 
 class IndexController extends Controller
 {
-    //
+    //后台首页
     function index()
     {
-        return '这是后台控制器';
+        return view("Admin.index");
+    }
+
+    public function welcome()
+    {
+        return view("Admin.welcome");
     }
 }
